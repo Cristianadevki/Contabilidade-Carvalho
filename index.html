@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Regina Carvalho dos Santos, contadora com mais de 14 anos de experiência. Conheça seus serviços contábeis.">
+
+  <title>Regina Carvalho | Contabilidade</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* Configurações gerais */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      line-height: 1.7;
+      color: #F5F5F5;
+
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.38),
+          rgba(0, 0, 0, 0.38)
+        ),
+        url("./escritorio.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      margin: 0;
+      padding: 40px 20px;
+
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 1);
+    }
+
+    /* Área principal transparente */
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: transparent;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-shadow: none;
+    }
+
+    /* Cabeçalho */
+    header {
+      max-width: 620px;
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
+      border-bottom: 1px solid rgba(232, 213, 165, 0.8);
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #FFFFFF;
+      margin: 0;
+      font-size: 2.3em;
+      font-weight: 800;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      text-shadow: 2px 3px 7px #000000;
+    }
+
+    .subtitle {
+      color: #F5F5F5;
+      font-weight: 700;
+      font-size: 1.05em;
+      margin: 18px 0;
+      text-align: left;
+      text-shadow: 1px 2px 5px #000000;
+    }
+
+    /* Identificação profissional */
+    .badge {
+      display: block;
+      width: fit-content;
+      background: transparent;
+      color: #E8D5A5;
+      padding: 7px 17px;
+      border: 1px solid #E8D5A5;
+      border-radius: 30px;
+      font-size: 0.95em;
+      font-weight: 700;
+      margin: 0 auto;
+      text-align: center;
+      text-shadow: 1px 2px 4px #000000;
+    }
+
+    /* Conteúdo principal */
+    main {
+      max-width: 620px;
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    /* Seções */
+    section {
+      margin-bottom: 38px;
+    }
+
+    h2 {
+      color: #FFFFFF;
+      font-size: 1.7em;
+      font-weight: 800;
+      border-left: 4px solid #E8D5A5;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 2px 2px 6px #000000;
+    }
+
+    p {
+      color: #F5F5F5;
+      font-weight: 600;
+      margin-top: 0;
+      line-height: 1.85;
+      text-shadow: 1px 2px 5px #000000;
+    }
+
+    /* Apresentação profissional */
+    .sobre-regina {
+      text-align: left;
+      margin: 30px 0;
+    }
+
+    .sobre-regina p {
+      font-family: 'Lato', sans-serif;
+      color: #F5F5F5;
+      font-weight: 600;
+      line-height: 1.85;
+      margin-bottom: 16px;
+      text-shadow: 1px 2px 5px #000000;
+    }
+
+    /* Serviços em botões sofisticados */
+    .lista-servicos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .lista-servicos li {
+      color: #F5F5F5;
+      font-size: 0.95em;
+      font-weight: 700;
+      padding: 11px 18px;
+      border: 1px solid rgba(232, 213, 165, 0.85);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.3s ease, transform 0.3s ease;
+      text-shadow: 1px 2px 4px #000000;
+    }
+
+    .lista-servicos li::before {
+      content: "✓";
+      color: #E8D5A5;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+
+    .lista-servicos li:hover {
+      background: rgba(232, 213, 165, 0.16);
+      transform: translateY(-2px);
+    }
+
+    /* Links de contato */
+    a {
+      color: #E8D5A5;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-shadow: 1px 2px 4px #000000;
+    }
+
+    a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Botão de contato */
+    .cta-container {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      display: inline-block;
+      transition: background 0.3s ease;
+      text-shadow: none;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe57;
+      color: #FFFFFF;
+    }
+
+    .btn-whatsapp:focus-visible {
+      outline: 3px solid #FFFFFF;
+      outline-offset: 4px;
+    }
+
+    /* Destaque da experiência */
+    .experiencia-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+
+    .experiencia {
+      display: inline-block;
+      color: #E8D5A5;
+      border: 1px solid #E8D5A5;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95em;
+      font-weight: 700;
+      text-shadow: 1px 2px 4px #000000;
+    }
+
+    /* Rodapé centralizado */
+    footer {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #F5F5F5;
+      margin-top: 45px;
+      border-top: 1px solid rgba(232, 213, 165, 0.8);
+      padding-top: 20px;
+    }
+
+    footer p {
+      color: #F5F5F5;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 1px 2px 5px #000000;
+    }
+
+    /* Adaptação para celulares */
+    @media (max-width: 600px) {
+
+      body {
+        padding: 20px 12px;
+        background-attachment: scroll;
+      }
+
+      .container {
+        padding: 25px 10px;
+      }
+
+      header,
+      main {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.45em;
+      }
+
+      .subtitle {
+        font-size: 0.98em;
+      }
+
+      .lista-servicos {
+        gap: 9px;
+      }
+
+      .lista-servicos li {
+        font-size: 0.9em;
+        padding: 9px 13px;
+      }
+
+      .cta-container {
+        text-align: left;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Cabeçalho -->
+    <header>
+
+      <h1>Regina Carvalho</h1>
+
+      <p class="subtitle">
+        Contabilidade e Assessoria Empresarial totalmente on-line.
+        Soluções contábeis para MEIs, empresas e pessoas físicas.
+        Experiência e orientação para cuidar da sua vida financeira e empresarial.
+      </p>
+
+      <div class="experiencia-container">
+        <span class="experiencia">
+          Mais de 14 anos de experiência
+        </span>
+      </div>
+
+    </header>
+
+    <main>
+
+      <!-- Apresentação profissional -->
+      <section class="sobre-regina" id="biografia">
+
+        <h2>Sobre mim</h2>
+
+        <p>
+          Sou Regina Carvalho, contadora, tenho 39 anos e sou
+          formada em Ciências Contábeis, com MBA em Gestão
+          Estratégica de Negócios.
+        </p>
+
+        <p>
+          Atuo há mais de 14 anos na área contábil, oferecendo
+          serviços de contabilidade e assessoria para MEIs,
+          empresas e pessoas físicas.
+        </p>
+
+        <p>
+          Meu trabalho é pautado na responsabilidade, na
+          experiência e no compromisso de oferecer orientação
+          contábil de qualidade, proporcionando aos meus clientes
+          mais segurança e tranquilidade na gestão de suas obrigações.
+        </p>
+
+        <p>
+          Realizo meus atendimentos de forma on-line,
+          diretamente do meu escritório, oferecendo praticidade
+          e comodidade aos clientes.
+        </p>
+
+      </section>
+
+      <!-- Serviços contábeis -->
+      <section id="servicos">
+
+        <h2>Serviços contábeis</h2>
+
+        <ul class="lista-servicos">
+          <li>Contabilidade para Simples Nacional e MEI</li>
+          <li>Declaração de Imposto de Renda (IRPF)</li>
+          <li>Regularização e parcelamento de débitos MEI</li>
+          <li>Orientação fiscal</li>
+          <li>Assessoria para empresas</li>
+        </ul>
+
+      </section>
+
+      <!-- Contato -->
+      <section id="contato">
+
+        <h2>Contato</h2>
+
+        <p>
+          ✉️ E-mail:
+          <a href="mailto:contabilidadereginacarvalho@gmail.com">
+            contabilidadereginacarvalho@gmail.com
+          </a>
+        </p>
+
+        <p>
+          📞 Celular:
+          <a href="tel:+5531992888947">
+            (31) 99288-8947
+          </a>
+        </p>
+
+        <p>
+          📷 Instagram:
+          <a href="https://www.instagram.com/contabilidadecarvalhoregina2015/"
+             target="_blank"
+             rel="noopener noreferrer">
+            @contabilidadecarvalhoregina2015
+          </a>
+        </p>
+
+        <div class="cta-container">
+
+          <a
+            href="https://wa.me/5531992888947"
+            class="btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar pelo WhatsApp
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Identificação profissional antes do rodapé -->
+    <div class="experiencia-container">
+
+      <span class="badge">
+        Contadora | CRC-MG nº 109049/O
+      </span>
+
+    </div>
+
+    <!-- Rodapé centralizado -->
+    <footer>
+
+      <p>
+        &copy; 2026 Regina Carvalho dos Santos.
+        Todos os direitos reservados.
+      </p>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
