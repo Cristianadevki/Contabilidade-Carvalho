@@ -31,6 +31,7 @@ Integração entre aplicações e bancos de dados
 💡 Projeto ainda em desenvolvimento
 
 Contabilidade Regina Carvalho
+
 Projeto de desenvolvimento web para empresa de contabilidade, com foco na apresentação de serviços e experiência do usuário.
 
 🎯 Objetivo
